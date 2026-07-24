@@ -12,6 +12,11 @@ create table if not exists public.bookings (
 
 alter table public.bookings enable row level security;
 
+-- New projects don't always pre-grant schema usage to anon; without it,
+-- PostgREST rejects inserts with a misleading RLS-violation error.
+grant usage on schema public to anon;
+grant insert on public.bookings to anon;
+
 -- Allow the public anon key to INSERT new leads only (no read/update/delete).
 create policy "anon can insert bookings"
   on public.bookings
