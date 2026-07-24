@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slimness Tashkent — студия коррекции фигуры</title>
+<meta name="description" content="Slimness Tashkent — студия коррекции фигуры и омоложения тела в Ташкенте. LPG-массаж, мадеротерапия, кавитация, RF-лифтинг и другие авторские методики.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top">Slimness <span>Tashkent</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#programs" data-i18n="nav.programs">Курсы</a>
+      <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+      <a href="#faq" data-i18n="nav.faq">Вопросы</a>
+      <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="ru" class="active">RU</button>
+        <button type="button" data-lang="uz">UZ</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <a class="phone" href="tel:+998000000000">[ТЕЛЕФОН]</a>
+      <button class="btn btn-primary" id="openBookingBtn" data-i18n="nav.book">Записаться</button>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Первая студия Slimness в Ташкенте</p>
+        <h1 data-i18n="hero.title">Авторская коррекция фигуры и омоложение тела</h1>
+        <p class="hero-sub" data-i18n="hero.subtitle">Приходите на пробную процедуру и почувствуйте результат уже после первого визита в студию.</p>
+        <ul class="hero-points">
+          <li data-i18n="hero.point1">Без жёстких диет и изнурительных тренировок</li>
+          <li data-i18n="hero.point2">Без долгого восстановления после процедур</li>
+          <li data-i18n="hero.point3">Заметный эффект с первых сеансов</li>
+        </ul>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-open-booking data-i18n="hero.cta">Записаться на бесплатный чек-ап</button>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- CHECK-UP -->
+  <section class="checkup" id="checkup">
+    <div class="container checkup-inner">
+      <div class="checkup-text">
+        <p class="eyebrow" data-i18n="checkup.eyebrow">Бесплатно</p>
+        <h2 data-i18n="checkup.title">Чек-ап тела перед стартом курса</h2>
+        <ul class="check-list">
+          <li data-i18n="checkup.item1">Консультация специалиста по коррекции фигуры</li>
+          <li data-i18n="checkup.item2">Анализ состава тела и особенностей организма</li>
+          <li data-i18n="checkup.item3">Поиск причин лишнего веса, отёков и дряблости кожи</li>
+          <li data-i18n="checkup.item4">Индивидуальный план процедур без диет и стресса</li>
+        </ul>
+        <div class="checkup-meta">
+          <div><span data-i18n="checkup.duration_label">Длительность</span><strong data-i18n="checkup.duration_value">45 минут</strong></div>
+          <div><span data-i18n="checkup.price_label">Стоимость</span><strong data-i18n="checkup.price_value">Бесплатно</strong></div>
+        </div>
+        <button class="btn btn-outline" data-open-booking data-i18n="checkup.cta">Записаться на чек-ап</button>
+      </div>
+      <div class="checkup-media" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- PROBLEMS -->
+  <section class="problems">
+    <div class="container">
+      <h2 class="section-title" data-i18n="problems.title">Это для вас, если</h2>
+      <div class="problems-grid">
+        <div class="problem-card" data-i18n="problems.item1">Хотите избавиться от проблемных зон и лишнего веса</div>
+        <div class="problem-card" data-i18n="problems.item2">Беспокоит целлюлит и рыхлость кожи</div>
+        <div class="problem-card" data-i18n="problems.item3">Мучают отёки и усталость в ногах</div>
+        <div class="problem-card" data-i18n="problems.item4">Хочется быстрее восстановиться после родов</div>
+        <div class="problem-card" data-i18n="problems.item5">Активно тренируетесь, но не видите результата в объёмах</div>
+        <div class="problem-card" data-i18n="problems.item6">Не устраивает качество и тонус кожи</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.title">Услуги студии</h2>
+      <p class="section-sub" data-i18n="services.subtitle">Специалисты подбирают программу индивидуально после подробной консультации.</p>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <div class="container why-inner">
+      <div class="why-stats">
+        <div class="stat"><strong>10+</strong><span data-i18n="why.stat1">лет практики методики</span></div>
+        <div class="stat"><strong>99%</strong><span data-i18n="why.stat2">клиентов довольны результатом</span></div>
+        <div class="stat"><strong>1-2</strong><span data-i18n="why.stat3">размера за курс процедур</span></div>
+      </div>
+      <div class="why-text">
+        <h2 class="section-title" data-i18n="why.title">Почему выбирают Slimness</h2>
+        <ul class="why-list">
+          <li data-i18n="why.item1">Специалисты с медицинским образованием</li>
+          <li data-i18n="why.item2">Индивидуальный план по итогам чек-апа</li>
+          <li data-i18n="why.item3">Комфортные методики без боли и травм кожи</li>
+          <li data-i18n="why.item4">Гибкая оплата и рассрочка на курсы</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <h2 class="section-title" data-i18n="programs.title">Индивидуальные программы</h2>
+      <p class="section-sub" data-i18n="programs.subtitle">Курс процедур с чётким графиком закрепляет результат надолго.</p>
+      <div class="programs-grid" id="programsGrid"></div>
+      <div class="programs-cta">
+        <button class="btn btn-primary" data-open-booking data-i18n="programs.cta">Подобрать программу</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title" data-i18n="reviews.title">Отзывы наших клиентов</h2>
+      <p class="section-sub" data-i18n="reviews.subtitle">Здесь появятся отзывы гостей ташкентской студии — этот блок наполняется по мере работы.</p>
+      <div class="reviews-grid">
+        <div class="review-card placeholder">
+          <p data-i18n="reviews.placeholder1">Место для первого отзыва клиента студии.</p>
+          <span class="review-author" data-i18n="reviews.placeholder_author">Имя клиента</span>
+        </div>
+        <div class="review-card placeholder">
+          <p data-i18n="reviews.placeholder2">Место для второго отзыва клиента студии.</p>
+          <span class="review-author" data-i18n="reviews.placeholder_author">Имя клиента</span>
+        </div>
+        <div class="review-card placeholder">
+          <p data-i18n="reviews.placeholder3">Место для третьего отзыва клиента студии.</p>
+          <span class="review-author" data-i18n="reviews.placeholder_author">Имя клиента</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="certificates">
+    <div class="container certificates-inner">
+      <div>
+        <h2 class="section-title" data-i18n="certs.title">Подарочный сертификат</h2>
+        <p data-i18n="certs.text">Идеальный подарок близкому человеку — сертификат на любую сумму или на конкретный курс процедур.</p>
+        <button class="btn btn-outline" data-open-booking data-i18n="certs.cta">Оставить заявку на сертификат</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title" data-i18n="faq.title">Частые вопросы</h2>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts" id="contacts">
+    <div class="container contacts-inner">
+      <div class="contacts-info">
+        <h2 class="section-title" data-i18n="contacts.title">Контакты студии</h2>
+        <ul class="contacts-list">
+          <li><span data-i18n="contacts.address_label">Адрес</span><strong>[АДРЕС, ТАШКЕНТ]</strong></li>
+          <li><span data-i18n="contacts.hours_label">Часы работы</span><strong data-i18n="contacts.hours_value">пн–вс, 8:00–22:00 (по записи)</strong></li>
+          <li><span data-i18n="contacts.phone_label">Телефон</span><strong>[ТЕЛЕФОН]</strong></li>
+          <li><span data-i18n="contacts.email_label">Email</span><strong>[EMAIL]</strong></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+      <div class="contacts-map" aria-hidden="true">
+        <span data-i18n="contacts.map_placeholder">[КАРТА — добавить embed после выбора адреса]</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">Slimness <span>Tashkent</span></p>
+      <p data-i18n="footer.legal">[ЮР. ЛИЦО / ИНН — заполнить после регистрации]</p>
+    </div>
+    <p data-i18n="footer.rights">© 2026 Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="bookingOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+    <button class="modal-close" id="closeBookingBtn" aria-label="Close">&times;</button>
+    <h3 id="bookingTitle" data-i18n="booking.title">Записаться на бесплатный чек-ап</h3>
+    <p data-i18n="booking.subtitle">Оставьте контакты — администратор свяжется с вами для подтверждения времени.</p>
+    <form id="bookingForm">
+      <label data-i18n="booking.name_label">Имя
+        <input type="text" name="name" required>
+      </label>
+      <label data-i18n="booking.phone_label">Телефон
+        <input type="tel" name="phone" required placeholder="+998 __ ___ __ __">
+      </label>
+      <label data-i18n="booking.service_label">Интересующая услуга
+        <select name="service" id="bookingServiceSelect"></select>
+      </label>
+      <label data-i18n="booking.comment_label">Комментарий
+        <textarea name="comment" rows="3"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary btn-lg" data-i18n="booking.submit">Отправить заявку</button>
+      <p class="form-status" id="bookingStatus"></p>
+    </form>
+  </div>
+</div>
+
+<script src="supabase-config.js"></script>
+<script src="https://unpkg.com/@supabase/supabase-js@2" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
